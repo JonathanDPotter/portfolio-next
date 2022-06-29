@@ -1,0 +1,84 @@
+@use "../partials/sizing" as *;
+
+.home {
+  inset: $header-h/2 0;
+  min-height: $page-h + $header-h/2;
+
+  .container {
+    height: 100%;
+    max-width: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    overflow: hidden;
+
+    img {
+      height: 30vh;
+      display: block;
+      margin: 0 auto;
+      opacity: 0.8;
+    }
+
+    nav {
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+
+      button {
+        text-align: center;
+        width: 30vh;
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: start;
+      gap: 0;
+
+      img {
+        // calculated to match 30deg angle of skewed buttons
+        clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+        height: 40vh;
+        margin-left: 0;
+        margin-right: -6vh;
+      }
+
+      nav {
+        height: 40vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        transform: skew($skew-deg);
+
+        button {
+          transform: skew(-$skew-deg);
+          text-align: left;
+          width: 100%;
+          left: auto;
+          right: 0;
+
+          @for $i from 1 through 5 {
+            // clientHeight custom property is added in the Button component
+            &:nth-child(#{$i}) {
+              width: calc(100% + calc($i * 10vw));
+            }
+          }
+
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

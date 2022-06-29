@@ -1,0 +1,101 @@
+@use "./partials/colors" as *;
+@use "./partials/sizing" as *;
+@use "./partials/animations" as *;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 250ms ease-in-out;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: "IBM Plex Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.page {
+  position: fixed;
+  inset: calc($header-h * 2) 0;
+  min-height: calc($page-h - $header-h);
+  width: 100vw;
+  background-color: $black;
+  opacity: 1;
+
+  h2 {
+    margin: 1rem;
+  }
+
+  .top-space {
+    height: 25vh;
+  }
+
+  nav {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 600px) {
+    inset: $header-h 0;
+    min-height: $page-h;
+  }
+}
+
+.page[data-theme="light"] {
+  background-color: $lavender;
+  h2 {
+    color: $russian-green;
+    background-color: $trans-white;
+  }
+}
+
+.page[data-theme="bright"] {
+  background-color: $gray;
+
+  h2 {
+    color: $scarlet;
+    background-color: inherit;
+  }
+}
+
+.page.fade {
+  opacity: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: $maize;
+}
+
+@media (min-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: $trans-white;
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $trans-black;
+    -webkit-border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: $trans-white;
+  }
+}

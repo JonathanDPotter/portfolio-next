@@ -1,0 +1,68 @@
+@use "../partials/colors" as *;
+@use "../partials/animations" as *;
+
+.about-me {
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: $timberwolf;
+
+  .opening {
+    min-height: 50vh;
+
+    p {
+      text-indent: 2ch;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  }
+
+  .divider {
+    min-height: 50vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $onyx;
+    color: lighten($steel, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    p {
+      font-size: 2rem;
+    }
+
+    .slide {
+      animation: 1s ease-in-out 0s 1 slide-in-from-left;
+    }
+  }
+
+  .back-image {
+    height: 30vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.about-me[data-theme="light"] {
+  color: $raisin-black;
+
+  .divider {
+    background-color: $russian-green;
+    color: $space-sparkle;
+  }
+}
+
+.about-me[data-theme="bright"] {
+  color: $black;
+
+  .divider {
+    background-color: $white;
+    color: $cadmium-orange;
+  }
+}

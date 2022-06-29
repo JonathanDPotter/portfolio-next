@@ -1,0 +1,5 @@
+@use "../partials/mixins" as *;
+
+.main {
+  @include main;
+}

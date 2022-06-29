@@ -1,0 +1,192 @@
+@use "../partials/colors" as *;
+
+.menu {
+  all: unset;
+  position: relative;
+  height: 4vh;
+  width: 4vh;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 0.25rem;
+
+  &:after {
+    content: attr(aria-label);
+    position: absolute;
+    inset: 2.5rem 0;
+    color: $maize;
+    font-size: 1rem;
+    opacity: 0;
+    transition-delay: 500ms;
+  }
+
+  &:hover {
+    .icon1,
+    .icon2,
+    .icon3 {
+      box-shadow: 0 0 1rem $timberwolf;
+    }
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    outline: $maize solid 1px;
+  }
+
+  .icon1,
+  .icon2,
+  .icon3 {
+    position: absolute;
+    left: 12%;
+    top: 49%;
+    width: 3vh;
+    height: 3px;
+    background-color: $timberwolf;
+    transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+  }
+
+  .icon1 {
+    transform: translateY(-6px);
+    animation-delay: 100ms;
+  }
+
+  .icon1.open {
+    transform: rotate(40deg);
+  }
+
+  .icon2.open {
+    opacity: 0;
+  }
+
+  .icon3 {
+    transform: translateY(6px);
+    animation-delay: 250ms;
+  }
+
+  .icon3.open {
+    transform: rotate(-40deg);
+  }
+
+  @mixin options {
+    position: absolute;
+    top: 4rem;
+    color: $maize;
+    line-height: 2rem;
+    font-size: 0.75rem;
+    transform: translate(-1.5rem, 1rem);
+    background-color: $black;
+
+    ul {
+      padding: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      li:focus,
+      a:focus {
+        outline: $maize solid 1px;
+      }
+    }
+  }
+
+  .optionsOpen {
+    @include options;
+    @for $num from 1 through 6 {
+      li:nth-child(#{$num}) {
+        transform-origin: top center;
+        animation: slide-in-from-right-#{$num} calc($num * 250ms) linear;
+      }
+    }
+  }
+
+  .optionsClosed {
+    @include options;
+    transform: translateX(200%);
+    animation: slide-out-to-right;
+  }
+}
+
+.hamburger-icon[data-theme="light"] {
+  background-color: $space-sparkle;
+
+  &:after {
+    color: $raisin-black;
+  }
+
+  &:hover {
+    background-color: inherit;
+    .icon-1,
+    .icon-2,
+    .icon-3 {
+      box-shadow: 0 0 1rem $laurel;
+    }
+  }
+
+  &:focus {
+    outline: $laurel solid 2px;
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3 {
+    background-color: $laurel;
+  }
+
+  .options {
+    color: $black;
+
+    ul {
+      background-color: $laurel;
+
+      li:focus,
+      a:focus {
+        outline: $raisin-black solid 1px;
+      }
+    }
+  }
+}
+
+.hamburger-icon[data-theme="bright"] {
+  background-color: inherit;
+
+  &:after {
+    color: $black;
+  }
+
+  &:hover {
+    background-color: inherit;
+    .icon-1,
+    .icon-2,
+    .icon-3 {
+      box-shadow: 0 0 1rem $selective-yellow;
+    }
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3 {
+    background-color: $white;
+  }
+
+  .options {
+    color: $black;
+    font-size: 0.8rem;
+
+    ul {
+      background-color: $cadmium-orange;
+
+      li:focus,
+      a:focus {
+        outline: $scarlet solid 1px;
+      }
+    }
+  }
+}

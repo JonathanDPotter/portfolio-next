@@ -1,0 +1,144 @@
+@use "../partials/colors" as *;
+@use "../partials/animations" as *;
+
+.slider-container {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  display: grid;
+  overflow-y: hidden;
+  grid-template-areas:
+    "left image right"
+    "left dots right";
+  grid-template-columns: 10% 80% 10%;
+  justify-content: center;
+  overflow: hidden;
+
+
+  button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 3rem;
+    font-size: 3rem;
+  }
+
+  #left-arrow {
+    grid-area: left;
+  }
+
+  #right-arrow {
+    grid-area: right;
+  }
+
+  #left-arrow,
+  #right-arrow {
+    &:focus {
+      outline: none;
+      color: lighten($steel, 20%);
+    }
+  }
+
+  img {
+    grid-area: image;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .dots {
+    height: 2rem;
+    width: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    grid-area: dots;
+
+    .radio-container {
+      margin: auto 0;
+      height: 1rem;
+      width: 1rem;
+      display: block;
+      position: relative;
+
+      input {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1rem;
+        width: 1rem;
+        background-color: $timberwolf;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      input:checked ~ .radio {
+        background-color: $maize;
+      }
+    }
+  }
+}
+
+.slider-container[data-theme="light"] {
+  #left-arrow,
+  #right-arrow {
+    &:focus {
+      color: $laurel;
+    }
+  }
+
+  .dots {
+    .radio-container {
+      .radio {
+        background-color: $lavender;
+      }
+
+      input:checked ~ .radio {
+        background-color: $space-sparkle;
+      }
+    }
+  }
+}
+
+.slider-container[data-theme="bright"] {
+  #left-arrow,
+  #right-arrow {
+    color: $cadmium-orange;
+    &:focus {
+      color: $selective-yellow;
+    }
+  }
+
+  .dots {
+    .radio-container {
+      .radio {
+        background-color: $cadmium-orange;
+      }
+
+      input:checked ~ .radio {
+        background-color: $selective-yellow;
+      }
+    }
+  }
+}
+
+.clear {
+  animation: fade-out 250ms;
+  opacity: 0;
+}
+
+.opaque {
+  animation: fade-in 250ms;
+}

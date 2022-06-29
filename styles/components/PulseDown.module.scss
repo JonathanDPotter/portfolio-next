@@ -1,0 +1,9 @@
+@use "../partials/animations" as *;
+
+.pulse-down {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 5rem;
+  opacity: 0;
+  animation: 2s ease-in-out 3s infinite pulse;
+}

@@ -1,0 +1,123 @@
+@use "../partials/colors" as *;
+@use "../partials/animations" as *;
+
+$slide-time: 500ms;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: $trans-black;
+  animation: $slide-time ease-in-out slide-in-from-left;
+  z-index: 99;
+}
+
+.modal {
+  position: absolute;
+  inset: 10vh 10vw;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: $onyx;
+  color: $timberwolf;
+  font-weight: 600;
+  animation: $slide-time ease-in-out slide-in-from-left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  outline: none;
+  z-index: 100;
+
+  h2,
+  h3 {
+    color: $timberwolf;
+    background-color: inherit;
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: $maize;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      color: lighten($maize, 10%);
+      outline: $trans-white solid 2px;
+    }
+  }
+}
+
+.modal.close {
+  animation: calc($slide-time * 1.1) ease-in-out slide-out-to-right;
+}
+
+.modal.light {
+  background-color: $laurel;
+  color: $raisin-black;
+
+  h2,
+  h3 {
+    color: darken($russian-green, 20%);
+  }
+
+  a {
+    color: darken($russian-green, 20%);
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  button {
+    color: $raisin-black;
+    background-color: $lavender;
+  }
+}
+
+.modal.bright {
+  background-color: lighten($cadmium-orange, 30%);
+  color: $black;
+
+  h2,
+  h3 {
+    color: $black;
+  }
+
+  a {
+    color: $electric-purple;
+
+    &:hover,
+    &:focus {
+      color: $scarlet;
+    }
+  }
+
+  button {
+    color: $selective-yellow;
+    background-color: $scarlet;
+  }
+}
+
+.modal.header {
+  inset: 15%;
+  height: fit-content;
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    button,
+    .btn {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) {
+    inset: 35%;
+  }
+}
