@@ -8,7 +8,7 @@ $slide-time: 500ms;
   inset: 0;
   background-color: $trans-black;
   animation: $slide-time ease-in-out slide-in-from-left;
-  z-index: 99;
+  z-index: 999;
 }
 
 .modal {
@@ -28,7 +28,7 @@ $slide-time: 500ms;
   overflow-y: auto;
   overflow-x: hidden;
   outline: none;
-  z-index: 100;
+  z-index: 1000;
 
   h2,
   h3 {

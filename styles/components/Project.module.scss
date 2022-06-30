@@ -1,0 +1,24 @@
+@use "../partials/animations" as *;
+@use "../partials/colors" as *;
+
+.trigger {
+  position: relative;
+}
+
+.curtain {
+  position: absolute;
+  inset: 0;
+  height: 0;
+  max-width: 1200px;
+  background-color: $onyx;
+  z-index: 10;
+  animation: 1500ms linear reveal;
+}
+
+.curtain[data-theme="light"] {
+  background-color: $space-sparkle;
+}
+
+.curtain[data-theme="bright"] {
+  background-color: $gray;
+}

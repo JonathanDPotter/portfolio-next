@@ -1,9 +1,12 @@
 @use "../partials/animations" as *;
 
 .pulse-down {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
   font-size: 5rem;
   opacity: 0;
   animation: 2s ease-in-out 3s infinite pulse;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
 }

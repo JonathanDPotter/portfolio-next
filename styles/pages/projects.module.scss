@@ -1,0 +1,178 @@
+@use "../partials/colors" as *;
+@use "../partials/animations" as *;
+
+.projects {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .opening {
+    position: relative;
+    height: 50vh;
+    color: $timberwolf;
+
+    p {
+      text-indent: 2ch;
+      max-width: 800px;
+    }
+  }
+
+  .divider {
+    min-height: 50vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $onyx;
+    color: $timberwolf;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .trigger {
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: lighten($steel, 10%);
+      background-color: transparent;
+      margin-left: -1rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 1200px;
+      margin: 1rem auto;
+      height: 10rem;
+      object-fit: cover;
+      object-position: 0 0;
+    }
+
+    .link,
+    a {
+      color: $maize;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        color: lighten($maize, 20%);
+        font-weight: 550;
+      }
+    }
+
+    button {
+      all: unset;
+      min-width: 70%;
+      align-self: center;
+      font-size: inherit;
+      text-align: center;
+      padding: 0.5rem;
+      background-color: $timberwolf;
+      color: $onyx;
+      margin: 1rem 0;
+
+      @media (min-width: 600px) {
+        min-width: 50%;
+      }
+
+      @media (min-width: 800px) {
+        min-width: 30%;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: lighten($timberwolf, 10%);
+        color: darken($onyx, 10%);
+        outline: 2px solid $white;
+      }
+    }
+  }
+
+  .back-image {
+    height: 30vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: start;
+    background-size: contain;
+    opacity: 0.6;
+
+    @media (min-width: 1200px) {
+      background-size: 1200px;
+      background-position: center;
+    }
+  }
+}
+
+.projects[data-theme="light"] {
+  .opening {
+    color: $raisin-black;
+  }
+
+  .divider {
+    background-color: $space-sparkle;
+    color: $laurel;
+
+    h2 {
+      color: $laurel;
+      background-color: inherit;
+    }
+
+    .link,
+    a {
+      color: $lavender;
+    }
+
+    button {
+      background-color: $laurel;
+      color: $raisin-black;
+
+      &:focus,
+      &:hover {
+        background-color: lighten($laurel, 10%);
+      }
+    }
+  }
+}
+
+.projects[data-theme="bright"] {
+  background-color: $white;
+
+  .opening {
+    color: $black;
+  }
+
+  .divider {
+    background-color: $gray;
+    color: $black;
+
+    h2 {
+      color: $black;
+      background-color: inherit;
+    }
+
+    .link,
+    a {
+      color: $electric-purple;
+      width: fit-content;
+      &:focus,
+      &:hover {
+        color: $cadmium-orange;
+      }
+    }
+
+    button {
+      background-color: $selective-yellow;
+      color: $black;
+
+      &:focus,
+      &:hover {
+        background-color: lighten($selective-yellow, 20%);
+      }
+    }
+  }
+}

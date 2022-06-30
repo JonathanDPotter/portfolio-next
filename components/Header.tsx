@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-modal";
 import { v4 as uuid } from "uuid";
 import { useTheme } from "../context/themeContext";
@@ -80,7 +80,7 @@ const Header = () => {
 
       <Modal
         isOpen={themesOpen}
-        className={modalStyles.modal}
+        className={`${modalStyles.modal} ${modalStyles.header}`}
         onRequestClose={() => setThemesOpen(false)}
         overlayClassName={modalStyles.overlay}
         data-theme={theme}
