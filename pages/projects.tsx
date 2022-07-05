@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Modal from "react-modal";
 import { v4 as uuid } from "uuid";
 // components
@@ -84,9 +84,7 @@ const Projects = () => {
       markdown: string,
       setter: React.Dispatch<React.SetStateAction<string>>
     ) => {
-      let response = await fetch(markdown);
-      const text = await response.text();
-      setter(text);
+      setter(markdown);
     };
 
     markdowns.forEach(({ markdown, setter }) => getMarkdown(markdown, setter));
