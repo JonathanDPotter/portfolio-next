@@ -13,7 +13,11 @@ const TriggerOnScroll: FC<Iprops> = ({ className, children }) => {
   });
 
   return (
-    <div className={className ? className : "trigger"} ref={ref}>
+    <div
+      className={className ? className : "trigger"}
+      style={{ position: "relative" }}
+      ref={ref}
+    >
       {inView && children}
     </div>
   );

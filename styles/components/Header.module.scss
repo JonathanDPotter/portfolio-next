@@ -54,7 +54,7 @@
       font-size: 1rem;
       transform: skew($skew-deg);
       height: 2.5rem;
-      width: 100%;
+      width: auto;
       padding: 0 1rem;
       background-color: $steel;
       border: 2px solid $onyx;
@@ -68,7 +68,7 @@
         background-color: $onyx;
         color: lighten($steel, 10%);
       }
-      
+
       .textContainer {
         transform: skew(-$skew-deg);
         line-height: calc($header-h/2);
@@ -90,7 +90,7 @@
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       padding: 0 1rem;
 
-      a {
+      .link {
         height: auto;
         width: auto;
         font-weight: 600;

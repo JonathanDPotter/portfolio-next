@@ -30,7 +30,11 @@ const Menu = () => {
         }
       ></div>
       <div
-        className={menuOpen ? menuStyles.optionsOpen : menuStyles.optionsClosed}
+        className={
+          menuOpen
+            ? `${menuStyles.optionsOpen} ${menuStyles.options}`
+            : `${menuStyles.optionsClosed} ${menuStyles.options}`
+        }
       >
         <ul>
           <li onClick={() => setThemesOpen(true)} tabIndex={menuOpen ? 0 : -1}>

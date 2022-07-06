@@ -1,0 +1,37 @@
+@use "../partials/colors" as *;
+
+.contact {
+  .content {
+    background-color: $steel;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    p {
+      text-indent: 2ch;
+      a {
+        color: $maize;
+      }
+    }
+  }
+}
+
+.contact[data-theme="light"] {
+  .content {
+    background-color: $russian-green;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.contact[data-theme="bright"] {
+  .content {
+    background-color: $white;
+
+    a {
+      color: $electric-purple;
+    }
+  }
+}

@@ -114,7 +114,7 @@
   }
 }
 
-.hamburger-icon[data-theme="light"] {
+.menu[data-theme="light"] {
   background-color: $space-sparkle;
 
   &:after {
@@ -154,7 +154,7 @@
   }
 }
 
-.hamburger-icon[data-theme="bright"] {
+.menu[data-theme="bright"] {
   background-color: inherit;
 
   &:after {

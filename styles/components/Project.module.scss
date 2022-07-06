@@ -1,10 +1,6 @@
 @use "../partials/animations" as *;
 @use "../partials/colors" as *;
 
-.trigger {
-  position: relative;
-}
-
 .curtain {
   position: absolute;
   inset: 0;

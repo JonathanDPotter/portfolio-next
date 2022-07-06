@@ -1,5 +1,45 @@
-@use "../partials/mixins" as *;
+@use "../partials/colors" as *;
 
-.main {
-  @include main;
+.about {
+  .info {
+    display: flex;
+    flex-direction: column;
+    background-color: $steel;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    p {
+      text-indent: 2ch;
+    }
+
+    button {
+      all: unset;
+      font-size: inherit;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: $timberwolf;
+      color: $onyx;
+      align-self: center;
+
+      &:focus,
+      &:hover {
+        background-color: lighten($timberwolf, 10%);
+        color: darken($onyx, 10%);
+        outline: 2px solid $white;
+      }
+    }
+  }
+}
+
+.about[data-theme="light"] {
+  .info {
+    background-color: $laurel;
+  }
+}
+
+.about[data-theme="bright"] {
+  .info {
+    background-color: $white;
+  }
 }

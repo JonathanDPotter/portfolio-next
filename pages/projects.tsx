@@ -113,7 +113,7 @@ const Projects = () => {
           <div className={projectStyles.project} key={uuid()}>
             <div className={projectsStyles.divider}>
               <div className={projectsStyles.container}>
-                <TriggerOnScroll className={projectStyles.trigger}>
+                <TriggerOnScroll className={projectsStyles.trigger}>
                   <Project
                     markdownText={text}
                     image={image}
@@ -124,7 +124,7 @@ const Projects = () => {
               </div>
             </div>
             <div
-              className={projectsStyles.backImage}
+              className={projectsStyles["back-image"]}
               style={{ backgroundImage: `url("${image}")` }}
             ></div>
           </div>
