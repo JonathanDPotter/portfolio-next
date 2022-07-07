@@ -8,7 +8,7 @@ const Resume = () => {
 
   useEffect(() => {
     setFade(false);
-  });
+  }, []);
 
   return (
     <div

@@ -12,6 +12,7 @@ import { useTheme } from "../context/themeContext";
 import projectStyles from "../styles/components/Project.module.scss";
 import projectsStyles from "../styles/pages/projects.module.scss";
 import modalStyles from "../styles/components/Modal.module.scss";
+import Image from "next/image";
 
 interface Iprops {
   markdownText: string;
@@ -44,7 +45,7 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
       <p className={projectsStyles.link} onClick={() => setModalOpen(true)}>
         more...
       </p>
-      <img src={image} alt="app screenshot" />
+      <Image src={image} alt="app screenshot" />
       <button onClick={() => window.open(link, "_blank")}>
         go to hosted app <FontAwesomeIcon icon={faReact} />
       </button>

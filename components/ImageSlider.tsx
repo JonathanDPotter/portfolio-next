@@ -4,6 +4,7 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuid } from "uuid";
 import imageSliderStyles from "../styles/components/ImageSlider.module.scss";
 import { useTheme } from "../context/themeContext";
+import Image from "next/image";
 
 interface Iprops {
   className?: string;
@@ -60,7 +61,7 @@ const ImageSlider: FC<Iprops> = ({ title, images, className }) => {
     setPrevImage(images[prev]);
     setImage(images[index]);
     setNextImage(images[next]);
-  }, [index]);
+  }, [index, images, numberOfImages]);
 
   return (
     <div
@@ -79,15 +80,15 @@ const ImageSlider: FC<Iprops> = ({ title, images, className }) => {
       >
         <FontAwesomeIcon icon={faAngleLeft} />
       </button>
-      <img src={prevImage} alt={title} height="0" width="0" />
-      <img
+      <Image src={prevImage} alt={title} height="0" width="0" />
+      <Image
         src={image}
         alt={title}
         height={400}
         className={opacity}
         onAnimationEnd={handleAnimationEnd}
       />
-      <img src={nextImage} alt={title} height="0" width="0" />
+      <Image src={nextImage} alt={title} height="0" width="0" />
       <form id={title} className={imageSliderStyles.dots}>
         {images.map((_, i) => (
           <div className={imageSliderStyles["radio-container"]} key={uuid()}>

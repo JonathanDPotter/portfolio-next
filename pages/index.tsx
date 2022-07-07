@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { useRouter } from "next/router";
 import { useTheme } from "../context/themeContext";
 import homeStyles from "../styles/pages/home.module.scss";
+import Image from "next/image";
 
 const Home = () => {
   const router = useRouter();
@@ -27,7 +28,7 @@ const Home = () => {
       data-location={router.pathname}
     >
       <div className={homeStyles.container}>
-        <img
+        <Image
           src="https://res.cloudinary.com/skarsnik/image/upload/v1655749376/portfolioAssets/homePage_hpzuur.jpg"
           alt="man in glasses smiling"
         />

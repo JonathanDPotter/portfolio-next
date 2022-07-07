@@ -88,7 +88,7 @@ const Projects = () => {
     };
 
     markdowns.forEach(({ markdown, setter }) => getMarkdown(markdown, setter));
-  }, []);
+  }, [markdowns]);
 
   return (
     <div
