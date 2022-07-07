@@ -45,7 +45,7 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
       <p className={projectsStyles.link} onClick={() => setModalOpen(true)}>
         more...
       </p>
-      <Image src={image} alt="app screenshot" />
+      <img src={image} alt="app screenshot" />
       <button onClick={() => window.open(link, "_blank")}>
         go to hosted app <FontAwesomeIcon icon={faReact} />
       </button>

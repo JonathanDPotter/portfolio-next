@@ -23,8 +23,6 @@ const ImageSlider: FC<Iprops> = ({ title, images, className }) => {
 
   const { theme } = useTheme();
 
-  const timeout = 250;
-
   const handleFade = () => {
     setOpacity(imageSliderStyles.clear);
   };
@@ -61,7 +59,7 @@ const ImageSlider: FC<Iprops> = ({ title, images, className }) => {
     setPrevImage(images[prev]);
     setImage(images[index]);
     setNextImage(images[next]);
-  }, [index, images, numberOfImages]);
+  }, [index]);
 
   return (
     <div
@@ -75,20 +73,20 @@ const ImageSlider: FC<Iprops> = ({ title, images, className }) => {
       <button
         onClick={handleClick}
         id="left-arrow"
-        disabled={opacity === "clear"}
+        disabled={opacity === imageSliderStyles.clear}
         aria-label="previous image"
       >
         <FontAwesomeIcon icon={faAngleLeft} />
       </button>
-      <Image src={prevImage} alt={title} height="0" width="0" />
-      <Image
+      <img src={prevImage} alt={title} height="0" width="0" />
+      <img
         src={image}
         alt={title}
         height={400}
         className={opacity}
         onAnimationEnd={handleAnimationEnd}
       />
-      <Image src={nextImage} alt={title} height="0" width="0" />
+      <img src={nextImage} alt={title} height="0" width="0" />
       <form id={title} className={imageSliderStyles.dots}>
         {images.map((_, i) => (
           <div className={imageSliderStyles["radio-container"]} key={uuid()}>
@@ -106,7 +104,7 @@ const ImageSlider: FC<Iprops> = ({ title, images, className }) => {
       <button
         onClick={handleClick}
         id="right-arrow"
-        disabled={opacity === "clear"}
+        disabled={opacity === imageSliderStyles.clear}
         aria-label="next image"
       >
         <FontAwesomeIcon icon={faAngleRight} />

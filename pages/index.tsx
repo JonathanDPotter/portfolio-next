@@ -28,7 +28,7 @@ const Home = () => {
       data-location={router.pathname}
     >
       <div className={homeStyles.container}>
-        <Image
+        <img
           src="https://res.cloudinary.com/skarsnik/image/upload/v1655749376/portfolioAssets/homePage_hpzuur.jpg"
           alt="man in glasses smiling"
         />
