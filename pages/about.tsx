@@ -29,17 +29,19 @@ const About = () => {
         <br />
         <p>
           This site was written in typescript with react and does not utilize a
-          back-end. I use sass for styling, the context api for global state
-          management, react-intersection-observer for scroll events,
-          react-markdown to display markdown, react-pdf to display my resume,
-          react-modal to show modals, uuid for element keys, and fontawesome for
-          icons. The app is hosted on Vercel.
+          back-end. It was originally a single-page react app, but I converted
+          it into a next.js app in order to get an easy introduction to next.js.
+          I used scss for styling, the context api for global state management,
+          react-intersection-observer for scroll events, react-markdown to
+          display markdown, react-pdf to display my resume, react-modal to show
+          modals, uuid for element keys, and fontawesome for icons. The app is
+          hosted on Vercel.
         </p>
         <br />
         <button
           onClick={() =>
             window.open(
-              "https://github.com/JonathanDPotter/portfolio",
+              "https://github.com/JonathanDPotter/portfolio-next",
               "_blank"
             )
           }
