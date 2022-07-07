@@ -38,9 +38,9 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
   return (
     <>
       <div className={projectStyles.curtain} data-theme={theme}></div>
-      <ReactMarkdown
-        children={markdownText.substring(0, markdownText.indexOf("---"))}
-      />
+      <ReactMarkdown>
+        {markdownText.substring(0, markdownText.indexOf("---"))}
+      </ReactMarkdown>
       <p className={projectsStyles.link} onClick={() => setModalOpen(true)}>
         more...
       </p>
@@ -65,7 +65,7 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
             : `${modalStyles.overlay} ${modalStyles[theme]}`
         }
       >
-        <ReactMarkdown children={markdownText} />
+        <ReactMarkdown>{markdownText}</ReactMarkdown>
         <Button
           text="Close"
           size={2}
