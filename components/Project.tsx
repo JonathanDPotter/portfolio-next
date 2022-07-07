@@ -11,6 +11,7 @@ import { useTheme } from "../context/themeContext";
 // styles
 import projectStyles from "../styles/components/Project.module.scss";
 import projectsStyles from "../styles/pages/projects.module.scss";
+import modalStyles from "../styles/components/Modal.module.scss";
 
 interface Iprops {
   markdownText: string;
@@ -53,9 +54,15 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => closeModal(() => setModalOpen(false))}
-        className={modalClose ? `modal close ${theme}` : `modal ${theme}`}
+        className={
+          modalClose
+            ? `${modalStyles.modal} ${modalStyles.close} ${modalStyles[theme]}`
+            : `${modalStyles.modal} ${modalStyles[theme]}`
+        }
         overlayClassName={
-          modalClose ? `overlay close ${theme}` : `overlay ${theme}`
+          modalClose
+            ? `${modalStyles.overlay} ${modalStyles.close} ${modalStyles[theme]}`
+            : `${modalStyles.overlay} ${modalStyles[theme]}`
         }
       >
         <ReactMarkdown children={markdownText} />
