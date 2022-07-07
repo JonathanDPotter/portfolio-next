@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jonathan Potter
 
-## Getting Started
+## Welcome to my personal portfolio
 
-First, run the development server:
+This app is a personal website that links to my github, linkedIn, and many hosted projects that I have developed. It is hosted on Vercel [here](https://portfolio-kappa-black-98.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+This site was written in typescript with react and does not utilize a
+back-end. After completing it in react as a single-page-app, I decided to convert it to a multi-page server-side rendered next.js app. I would probable structure it a little differently if I were to write it in next.js from the beggining, but converting it was a good introduction to next.js and using scss modules. I use scss for styling, the context api for global state management, react-intersection-observer for scroll events, react-markdown to display markdown, react-pdf to display my resume, react-modal to show modals, uuid for element keys, and fontawesome for icons.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Functionality
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+On opening the home page, the user is presented with navigation buttons to choose what part of the site to go to. The projects page has descriptions and photos of my projects, with links to the source code and hosted apps. The about me page has a quick description of me, and a few photo slideshows. The resume page displays a PDF of my resume and allows users to download it. The contact page displays my email address, and the about page contains a description of the site. A hamburger menu at the top contains a link to my github and linkedIn profiles and a color theme chooser.
