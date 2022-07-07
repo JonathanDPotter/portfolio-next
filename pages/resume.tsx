@@ -27,7 +27,7 @@ const Resume = () => {
         <a href="https://drive.google.com/uc?export=download&id=1-nERhXzjGB-0y_d1lJNh-fcPZjO6p-gj">
           Download
         </a>
-        <a href="/contact">Contact</a>
+        <a href="mailto:jonathan.d.potter@outlook.com">Email</a>
         <a
           href="https://github.com/JonathanDPotter"
           target="_blank"
