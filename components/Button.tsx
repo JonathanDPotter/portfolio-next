@@ -1,16 +1,24 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import React, { FC, ReactNode, useEffect, useRef, useState } from "react";
 import { useTheme } from "../context/themeContext";
 import buttonStyles from "../styles/components/Button.module.scss";
 
 interface Iprops {
-  text: string;
+  text?: string;
   size?: number;
   border?: string;
   style?: {};
-  onClick: () => void;
+  onClick?: () => void;
+  children?: ReactNode;
 }
 
-const Button: FC<Iprops> = ({ text, size = 1, border, onClick, style }) => {
+const Button: FC<Iprops> = ({
+  text,
+  size = 1,
+  border,
+  onClick,
+  style,
+  children,
+}) => {
   let initialStyle = {
     fontSize: `${size}vh`,
     height: `${size + 2}vh`,
@@ -44,6 +52,7 @@ const Button: FC<Iprops> = ({ text, size = 1, border, onClick, style }) => {
       ref={btn}
     >
       {text}
+      {children}
     </button>
   );
 };

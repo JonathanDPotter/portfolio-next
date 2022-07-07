@@ -1,37 +1,52 @@
 @use "../partials/colors" as *;
+@use "../partials/sizing" as *;
 
 .contact {
-  .content {
-    background-color: $steel;
-    max-width: 800px;
+  .buttons {
+    height: 100%;
+    max-width: fit-content;
     margin: 0 auto;
-    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
 
-    p {
-      text-indent: 2ch;
-      a {
-        color: $maize;
+    button {
+      text-align: center;
+      width: 30vh;
+      &::before {
+        display: none;
       }
     }
   }
-}
+  @media (min-width: 600px) {
+    .buttons {
+      height: 40vh;
+      width: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      transform: skew($skew-deg);
 
-.contact[data-theme="light"] {
-  .content {
-    background-color: $russian-green;
+      button {
+        transform: skew(-$skew-deg);
+        text-align: left;
+        width: 100%;
+        left: auto;
+        right: 0;
 
-    a {
-      color: $white;
-    }
-  }
-}
+        @for $i from 1 through 5 {
+          // clientHeight custom property is added in the Button component
+          &:nth-child(#{$i}) {
+            width: calc(100% + calc($i * 10vw));
+          }
+        }
 
-.contact[data-theme="bright"] {
-  .content {
-    background-color: $white;
-
-    a {
-      color: $electric-purple;
+        &::before {
+          display: block;
+        }
+      }
     }
   }
 }
