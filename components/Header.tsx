@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Modal from "react-modal";
 import { v4 as uuid } from "uuid";
 import { useTheme } from "../context/themeContext";
@@ -23,6 +23,12 @@ const Header = () => {
     setTheme(newTheme);
     setThemesOpen(false);
   };
+
+  useEffect(() => {
+    // ensures that theme is applied correctly after refresh
+    const savedTheme = localStorage.getItem("theme");
+    savedTheme && setTheme(savedTheme);
+  }, []);
 
   return (
     <header

@@ -8,12 +8,8 @@ const ThemeContext = createContext({
 });
 
 const ThemeProvider = (props: any) => {
-  // initializes theme to previously chosen theme or device mode
-  const [theme, setTheme] = useState<string>(
-    typeof window !== "undefined"
-      ? localStorage.getItem("theme") || "dark"
-      : "dark"
-  );
+  // initializes theme to previously chosen theme
+  const [theme, setTheme] = useState<string>("dark");
   // state for if theme modal is open
   const [themesOpen, setThemesOpen] = useState(false);
   const value = { theme, setTheme, themesOpen, setThemesOpen };

@@ -131,10 +131,14 @@
   background-color: $space-sparkle;
 
   h1,
-  a {
+  .link {
     color: $space-sparkle;
     background-color: $laurel;
     border-color: $space-sparkle;
+
+    &.active {
+      color: $lavender !important;
+    }
 
     &:hover {
       background-color: $space-sparkle;
@@ -142,10 +146,7 @@
       border-color: $laurel;
     }
   }
-
-  .active {
-    color: $lavender !important;
-  }
+  
 
   nav {
     &::before,
@@ -159,7 +160,7 @@
   background-color: $electric-purple;
 
   h1,
-  a {
+  .link {
     color: $white;
     background-color: $cadmium-orange;
     border-color: $electric-purple;

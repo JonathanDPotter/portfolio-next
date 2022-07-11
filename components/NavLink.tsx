@@ -16,7 +16,7 @@ const NavLink: FC<Iprops> = ({ to, className, activeClassName, children }) => {
 
   useEffect(() => {
     router.pathname === to ? setIsActive(true) : setIsActive(false);
-  }, []);
+  }, [router]);
 
   return (
     <div className={isActive ? `${className} ${activeClassName}` : className}>
