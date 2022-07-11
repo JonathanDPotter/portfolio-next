@@ -9,10 +9,13 @@
     position: relative;
     height: 50vh;
     color: $timberwolf;
+    max-width: 1200px;
+    margin: 0 auto;
 
     p {
       text-indent: 2ch;
       max-width: 800px;
+      margin: 1rem auto;
     }
   }
 
