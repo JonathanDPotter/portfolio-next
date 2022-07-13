@@ -61,6 +61,7 @@ const Header = () => {
         >
           <div className={headerStyles.textContainer}>About Me</div>
         </NavLink>
+        <hr/>
         <NavLink
           to="/resume"
           className={headerStyles.link}

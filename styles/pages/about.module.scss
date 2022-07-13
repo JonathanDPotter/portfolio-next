@@ -1,6 +1,7 @@
 @use "../partials/colors" as *;
 
 .about {
+  overflow-x: auto;
   .info {
     display: flex;
     flex-direction: column;

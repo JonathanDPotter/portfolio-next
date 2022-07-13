@@ -10,7 +10,7 @@
   grid-template-columns: 6fr 1fr;
   grid-template-rows: 1fr 1fr;
   inset: 0;
-  height: calc($header-h * 2);
+  height: calc($header-h + 5rem);
   width: 100%;
   z-index: 20;
   background-color: $onyx;
@@ -18,11 +18,11 @@
   h1 {
     position: relative;
     height: $header-h;
+    line-height: calc($header-h / 2);
     width: 50vw;
     justify-self: start;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     background-color: $steel;
-    font-size: 2rem;
     padding-left: 2rem;
 
     &::before {
@@ -51,7 +51,7 @@
     .link {
       text-decoration: none;
       color: $black;
-      font-size: 1rem;
+      font-size: 0.75rem;
       transform: skew($skew-deg);
       height: 2.5rem;
       width: auto;
@@ -75,6 +75,17 @@
         text-align: center;
       }
     }
+
+    hr {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  @media (min-width: 300px) {
+    .link {
+      font-size: 1rem !important;
+    }
   }
 
   @media (min-width: 600px) {
@@ -83,6 +94,7 @@
 
     h1 {
       height: calc($header-h/2);
+      font-size: 2rem;
     }
 
     nav {
@@ -94,6 +106,10 @@
         height: auto;
         width: auto;
         font-weight: 600;
+      }
+
+      hr {
+        display: none;
       }
 
       &::before,
@@ -146,7 +162,6 @@
       border-color: $laurel;
     }
   }
-  
 
   nav {
     &::before,

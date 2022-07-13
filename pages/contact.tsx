@@ -27,7 +27,7 @@ const Contact = () => {
       <div className={contactStyles.buttons}>
 
       <a href="mailto:jonathan.d.potter@outlook.com">
-        <Button size={4} text="Email me ">
+        <Button size={4} text="Email ">
           <FontAwesomeIcon icon={faEnvelope} />
         </Button>
       </a>
