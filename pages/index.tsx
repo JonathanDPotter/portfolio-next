@@ -29,7 +29,7 @@ const Home = () => {
     >
       <div className={homeStyles.container}>
         <img
-          src="https://res.cloudinary.com/skarsnik/image/upload/v1655749376/portfolioAssets/homePage_hpzuur.jpg"
+          src="https://res.cloudinary.com/skarsnik/image/upload/v1658008699/portfolioAssets/meSittingSmall_dfphqu.jpg"
           alt="man in glasses smiling"
         />
         <nav>

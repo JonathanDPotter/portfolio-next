@@ -28,22 +28,22 @@ const AboutMe = () => {
 
   const jsonImages: IsubjectInput[] = [
     {
-      title: "I live in Portland Maine.",
+      title: "I live in Portland, Maine.",
       imageJson: Portland,
       background:
         "https://assets.vogue.com/photos/6125681736841c7a9ecfa2ae/master/w_2560%2Cc_limit/454278947",
     },
     {
-      title: "I have three cats and a dog.",
+      title: "I have kind of a lot of pets.",
       imageJson: Cats,
       background:
-        "https://res.cloudinary.com/skarsnik/image/upload/v1654252884/webSelf_bfxuhv.jpg",
+        "https://res.cloudinary.com/skarsnik/image/upload/v1658008320/portfolioAssets/meSittingClose_letbrq.jpg",
     },
     {
       title: "Recently finished miniatures.",
       imageJson: Minis,
       background:
-        "https://res.cloudinary.com/skarsnik/image/upload/v1654252881/webSelfBW_krqju9.png",
+        "https://res.cloudinary.com/skarsnik/image/upload/v1658010001/portfolioAssets/miniatures/kan_uvswij.jpg",
     },
   ];
 
@@ -108,6 +108,7 @@ const AboutMe = () => {
           );
         })}
       </section>
+      <div className={aboutMeStyles.divider}></div>
     </div>
   );
 };
