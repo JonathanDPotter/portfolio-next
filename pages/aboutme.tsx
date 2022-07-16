@@ -66,7 +66,7 @@ const AboutMe = () => {
         <p>
           Hello, my name is Jonathan Potter. I have been working in retail
           grocery for about 25 years, but I decided that it was time to take my
-          careeer down a different path. I have been learning front-end
+          career down a different path. I have been learning front-end
           development for the past year and a half. In that time I have really
           connected with react, and I have included on this site many example
           projects using react. I plan to move on to using next.js for
@@ -74,8 +74,8 @@ const AboutMe = () => {
         </p>
         <br />
         <p>
-          I live in Portland Maine with my family, three cats and a dog. My
-          three children are all adults now, and the oldest lives in Chicago
+          I live in Portland, Maine with my family, three cats and a dog. My
+          three children are all young adults now, and the oldest lives in Chicago
           while the two youngest are still at home.
         </p>
         <br />
