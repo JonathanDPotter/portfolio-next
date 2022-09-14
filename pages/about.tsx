@@ -24,12 +24,12 @@ const About = () => {
         <p>
           This site is intended as a showcase of my skills as a web developer
           with an emphasis on full-stack projects that use a MERN stack. The
-          majority of the projects here are written using typescript.
+          majority of the projects here are written using TypeScript.
         </p>
         <br />
         <p>
-          This site was written in typescript with react and does not utilize a
-          back-end. It was originally a single-page react app, but I converted
+          This site was written in TypeScript with React and does not utilize a
+          back-end. It was originally a single-page React app, but I converted
           it into a next.js app in order to get an easy introduction to next.js.
           I used scss for styling, the context api for global state management,
           react-intersection-observer for scroll events, react-markdown to

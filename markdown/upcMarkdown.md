@@ -1,12 +1,12 @@
 ## UPC Tracker
 
-This is the front end for my UPC tracking web app. It will call the API on my back end to store UPCs in a Mongo Atlas database. I will use this to track which UPCs I have already reported, to where I reported them, and the status of the reported UPCs. The back-end repo is [here](https://github.com/JonathanDPotter/upc-tracker), and this app is hosted on github-pages [here](https://jonathandpotter.github.io/upc-tracker-front/).
+This is the front end for my UPC tracking web app. It will call the API on my back end to store UPCs in a Mongo Atlas database. I will use this to track which UPCs I have already reported, to where I reported them, and the status of the reported UPCs. The back-end repo is [here](https://github.com/JonathanDPotter/upc-tracker), and this web app is hosted on Vercel [here](https://upc-tracker-efxn5f8q7-jonathandpotter.vercel.app/). There is an APK for android [here](https://drive.google.com/uc?export=download&id=1W3OJ3BTU2PwaRoX13E5zNkZX97Q-h6IO).
 
 ---
 
 ### Technologies Used
 
-This app is written in typescript using react. Global state is handled with redux, and authentication is handled on the back end with jsonwebtoken. It is styled with tailwind css.
+This app is written in TypeScript using React Native. Global state is handled with redux, and authentication is handled on the back end with jsonwebtoken. It is styled with tailwind css.
 
 ---
 

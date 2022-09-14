@@ -5,7 +5,11 @@ import Modal from "react-modal";
 import Button from "../components/Button";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
+import {
+  faAndroid,
+  faGithub,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 // context
 import { useTheme } from "../context/themeContext";
 // styles
@@ -52,6 +56,17 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
       <button onClick={() => window.open(github, "_blank")}>
         see code on github <FontAwesomeIcon icon={faGithub} />
       </button>
+      {link === "https://upc-tracker-efxn5f8q7-jonathandpotter.vercel.app/" ? (
+        <button
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/uc?export=download&id=1W3OJ3BTU2PwaRoX13E5zNkZX97Q-h6IO"
+            )
+          }
+        >
+          download APK <FontAwesomeIcon icon={faAndroid} />
+        </button>
+      ) : null}
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => closeModal(() => setModalOpen(false))}

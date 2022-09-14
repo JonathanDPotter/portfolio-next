@@ -6,7 +6,7 @@ This is the front-end for my typie-talkie app. It is a simple app that I made to
 
 ### Technologies Used
 
-This app is written in react with typescript. I use the react context api for global state management, axios for api calls, socket.io for real-time messaging, fontawesome icons and SASS for styling.
+This app is written in React with TypeScript. I use the React context api for global state management, Axios for api calls, socket.io for real-time messaging, FontAwesome icons and SASS for styling.
 
 ---
 

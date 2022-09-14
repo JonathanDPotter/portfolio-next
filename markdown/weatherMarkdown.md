@@ -6,7 +6,7 @@ I made this app to practice consuming a third-party api. This is the front-end. 
 
 ### Technologies Used
 
-The app is written in typescript with react. It uses react router, redux, axios and sass for styling.
+The app is written in TypeScript with React. It uses React Router, Redux, Axios and SASS for styling.
 
 ---
 

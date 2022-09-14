@@ -6,7 +6,7 @@ Front end for the Odin Project Blog project. The app has full CRUD functionality
 
 ### Technologies Used
 
-The app is written with typescript in react. I utilize react-router, reduxjs-toolkit, axios, fontawesome icons and tailwindcss.
+The app is written with TypeScript in React. I utilize react-router, reduxjs-toolkit, Axios, FontAwesome icons and tailwindcss.
 
 ---
 

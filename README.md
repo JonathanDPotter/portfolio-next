@@ -8,8 +8,8 @@ This app is a personal website that links to my github, linkedIn, and many hoste
 
 ## Technologies used
 
-This site was written in typescript with react and does not utilize a
-back-end. After completing it in react as a single-page-app, I decided to convert it to a multi-page server-side rendered next.js app. I would probably structure it a little differently if I were to write it in next.js from the beggining, but converting it was a good introduction to next.js and using scss modules. I use scss for styling, the context api for global state management, react-intersection-observer for scroll events, react-markdown to display markdown, react-pdf to display my resume, react-modal to show modals, uuid for element keys, and fontawesome for icons.
+This site was written inTypeScriptwith React and does not utilize a
+back-end. After completing it in React as a single-page-app, I decided to convert it to a multi-page server-side rendered next.js app. I would probably structure it a little differently if I were to write it in next.js from the beggining, but converting it was a good introduction to next.js and using scss modules. I use scss for styling, the context api for global state management, react-intersection-observer for scroll events, react-markdown to display markdown, react-pdf to display my resume, react-modal to show modals, uuid for element keys, and fontawesome for icons.
 
 ---
 

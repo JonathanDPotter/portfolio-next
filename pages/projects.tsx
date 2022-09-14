@@ -54,7 +54,7 @@ const Projects = () => {
       text: upcMarkdownText,
       image:
         "https://user-images.githubusercontent.com/30156468/171711143-1abdfe24-3fff-45e7-910d-995d3ed8fd24.png",
-      link: "https://jonathandpotter.github.io/upc-tracker-front/",
+      link: "https://upc-tracker-efxn5f8q7-jonathandpotter.vercel.app/",
       github: "https://github.com/JonathanDPotter/upc-tracker-front",
     },
     {
