@@ -20,11 +20,11 @@ const Resume = () => {
       data-theme={theme}
     >
       <iframe
-        src="https://drive.google.com/file/d/1-nERhXzjGB-0y_d1lJNh-fcPZjO6p-gj/preview"
+        src="https://drive.google.com/file/d/1dMklZSl7ma0wq9PvIl1W4Uqu32m_TGDx/preview"
         allow="autoplay"
       ></iframe>
       <nav>
-        <a href="https://drive.google.com/uc?export=download&id=1-nERhXzjGB-0y_d1lJNh-fcPZjO6p-gj">
+        <a href="https://drive.google.com/uc?export=download&id=1dMklZSl7ma0wq9PvIl1W4Uqu32m_TGDx">
           Download
         </a>
         <a href="mailto:jonathan.d.potter@outlook.com">Email</a>
