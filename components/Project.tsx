@@ -60,11 +60,11 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
         <button
           onClick={() =>
             window.open(
-              "https://drive.google.com/uc?export=download&id=1W3OJ3BTU2PwaRoX13E5zNkZX97Q-h6IO"
+              "https://play.google.com/store/apps/details?id=com.jonathandpotter.upctracker"
             )
           }
         >
-          download APK <FontAwesomeIcon icon={faAndroid} />
+          get app from Play Store <FontAwesomeIcon icon={faAndroid} />
         </button>
       ) : null}
       <Modal
