@@ -11,6 +11,7 @@ import blogMarkdown from "../markdown/blogMarkown.md";
 import upcMarkdown from "../markdown/upcMarkdown.md";
 import weatherMarkdown from "../markdown/weatherMarkdown.md";
 import typieMarkdown from "../markdown/typieMarkdown.md";
+import weatherVueMarkdown from "../markdown/weatherVueMarkdown.md";
 // context
 import { useTheme } from "../context/themeContext";
 // styles
@@ -27,6 +28,7 @@ const Projects = () => {
   const [upcMarkdownText, setUpcMarkdownText] = useState("");
   const [weatherMarkdownText, setWeatherMarkdownText] = useState("");
   const [typieMarkdownText, setTypieMarkdownText] = useState("");
+  const [weatherVueMarkdownText, setWeatherVueMarkdownText] = useState("");
   const [fade, setFade] = useState(true);
 
   const markdowns = [
@@ -74,6 +76,15 @@ const Projects = () => {
         "https://user-images.githubusercontent.com/30156468/167945133-7badd9ca-7131-4d21-9472-ea4176410c43.png",
       link: "https://typie-talkie-front.vercel.app/",
       github: "https://github.com/JonathanDPotter/typie-talkie-front",
+    },
+    {
+      markdown: weatherVueMarkdown,
+      setter: setWeatherVueMarkdownText,
+      text: weatherVueMarkdownText,
+      image:
+        "https://user-images.githubusercontent.com/30156468/203765570-8629fd33-4c80-4031-9555-3df4049242f1.png",
+      link: "http://weather-imp-vue.vercel.app/",
+      github: "https://github.com/JonathanDPotter/weather-vue",
     },
   ];
 

@@ -16,7 +16,6 @@ import { useTheme } from "../context/themeContext";
 import projectStyles from "../styles/components/Project.module.scss";
 import projectsStyles from "../styles/pages/projects.module.scss";
 import modalStyles from "../styles/components/Modal.module.scss";
-import Image from "next/image";
 
 interface Iprops {
   markdownText: string;
