@@ -9,6 +9,7 @@ import {
   faAndroid,
   faGithub,
   faReact,
+  faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 // context
 import { useTheme } from "../context/themeContext";
@@ -50,7 +51,12 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
       </p>
       <img src={image} alt="app screenshot" />
       <button onClick={() => window.open(link, "_blank")}>
-        go to hosted app <FontAwesomeIcon icon={faReact} />
+        go to hosted app{" "}
+        <FontAwesomeIcon
+          icon={
+            link === "http://weather-imp-vue.vercel.app/" ? faVuejs : faReact
+          }
+        />
       </button>
       <button onClick={() => window.open(github, "_blank")}>
         see code on github <FontAwesomeIcon icon={faGithub} />
