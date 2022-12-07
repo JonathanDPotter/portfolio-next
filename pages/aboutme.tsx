@@ -34,7 +34,7 @@ const AboutMe = () => {
         "https://assets.vogue.com/photos/6125681736841c7a9ecfa2ae/master/w_2560%2Cc_limit/454278947",
     },
     {
-      title: "I have kind of a lot of pets.",
+      title: "We have adopted several pets.",
       imageJson: Cats,
       background:
         "https://res.cloudinary.com/skarsnik/image/upload/v1658008320/portfolioAssets/meSittingClose_letbrq.jpg",
@@ -75,8 +75,8 @@ const AboutMe = () => {
         <br />
         <p>
           I live in Portland, Maine with my family, three cats and a dog. My
-          three children are all young adults now, and the oldest lives in Chicago
-          while the two youngest are still at home.
+          three children are all young adults now, and the oldest lives in
+          Chicago while the two youngest are still at home.
         </p>
         <br />
         <p>
