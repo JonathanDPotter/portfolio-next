@@ -68,9 +68,9 @@ const AboutMe = () => {
           grocery for about 25 years, but I decided that it was time to take my
           career down a different path. I have been learning front-end
           development for the past year and a half. In that time I have really
-          connected with react, and I have included on this site many example
-          projects using react. I plan to move on to using next.js for
-          server-side rendered apps and to react-native for mobile development.
+          connected with React, and I have included on this site many example
+          projects using React. I plan to move on to using Next.js for
+          server-side rendered apps and to React Native for mobile development.
         </p>
         <br />
         <p>

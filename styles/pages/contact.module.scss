@@ -5,6 +5,7 @@
   .buttons {
     height: 100%;
     max-width: fit-content;
+    width: -moz-max-content;
     margin: 0 auto;
     overflow: hidden;
     display: flex;

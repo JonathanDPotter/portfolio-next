@@ -114,7 +114,7 @@ const Projects = () => {
         <h2>Projects</h2>
         <p>
           Below you will find a selection of front-end projects that I have
-          decided to feature here. Most of them have back-end express REST apis
+          decided to feature here. Most of them have back-end Express REST APIs
           that I wrote for them.
         </p>
         <PulseDown />
