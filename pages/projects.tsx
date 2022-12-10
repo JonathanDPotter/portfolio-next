@@ -113,9 +113,12 @@ const Projects = () => {
       <div className={projectsStyles.opening}>
         <h2>Projects</h2>
         <p>
-          Below you will find a selection of front-end projects that I have
-          decided to feature here. Most of them have back-end Express REST APIs
-          that I wrote for them.
+          Below you will find a selection of full-stack projects that I am very
+          proud of. most of the apps are written in React with TypreScript, but
+          one is in React Native and I have one Vue app as well. Aside from
+          Howler, which uses a Firebase back-end, They all have back-end REST
+          APIs that I built with Express and TypeScript. You can view the
+          repositories for each of the below projects.
         </p>
         <PulseDown />
       </div>

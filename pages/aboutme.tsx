@@ -66,11 +66,11 @@ const AboutMe = () => {
         <p>
           Hello, my name is Jonathan Potter. I have been working in retail
           grocery for about 25 years, but I decided that it was time to take my
-          career down a different path. I have been learning front-end
-          development for the past year and a half. In that time I have really
-          connected with React, and I have included on this site many example
-          projects using React. I plan to move on to using Next.js for
-          server-side rendered apps and to React Native for mobile development.
+          career down a different path. I have been learning web development for
+          the past two years. In that time I have really connected with React,
+          and I have included on this site many example projects using React and
+          React Native. I have done a little work in Vue and have included an
+          example of a project that I have converted to Vue.
         </p>
         <br />
         <p>
