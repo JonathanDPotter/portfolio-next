@@ -20,7 +20,7 @@ const Resume = () => {
       data-theme={theme}
     >
       <iframe
-        src="https://drive.google.com/file/d/1dMklZSl7ma0wq9PvIl1W4Uqu32m_TGDx/preview"
+        src="https://drive.google.com/file/d/1SaCDG9dhr2lDJcTyMz1C5-YcRud_x2rD/preview"
         allow="autoplay"
       ></iframe>
       <nav>
