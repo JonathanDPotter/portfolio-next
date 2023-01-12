@@ -43,10 +43,9 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
   return (
     <>
       <div className={projectStyles.curtain} data-theme={theme}></div>
-      <ReactMarkdown
-        components={{ h1: "h2", h2: "h3" }}
-        children={markdownText.substring(0, markdownText.indexOf("***"))}
-      />
+      <ReactMarkdown components={{ h1: "h2", h2: "h3" }}>
+        {markdownText.substring(0, markdownText.indexOf("***"))}
+      </ReactMarkdown>
       <p className={projectsStyles.link} onClick={() => setModalOpen(true)}>
         more...
       </p>
@@ -87,7 +86,9 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
             : `${modalStyles.overlay} ${modalStyles[theme]}`
         }
       >
-        <ReactMarkdown>{markdownText}</ReactMarkdown>
+        <ReactMarkdown components={{ h1: "h2", h2: "h3" }}>
+          {markdownText}
+        </ReactMarkdown>
         <Button
           text="Close"
           size={2}
