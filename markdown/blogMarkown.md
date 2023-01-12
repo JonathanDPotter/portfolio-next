@@ -1,15 +1,15 @@
-## Blog
+# Blog-Front
 
-Front end for the Odin Project Blog project. The app has full CRUD functionality with local authorization and redux state management.The back-end repo can be found [here](https://github.com/JonathanDPotter/rest-api), and the front-end is hosted [here](https://jonathandpotter.github.io/blog-api-front/)
+This website is a single page application built with React.js and TypeScript. It is my second version of the Odin Project blog project. The first was fully functional, but I wanted to update the code with new things that I have learned since originally building it. I also used this as an opportunity to further my practice with Bootstrap.
 
----
+## Technologies used
 
-### Technologies Used
+***
 
-The app is written with TypeScript in React. I utilize react-router, reduxjs-toolkit, Axios, FontAwesome icons and tailwindcss.
+This app uses React Router for page routing, Redux for state management, Axios for api calls, react-markdown to display markdown, and Bootstrap for styling. The back-end is built with Express.js and manages a MongoDB noSQL database to make a full-stack MERN application.
 
----
+## Functionality
 
-### Functionality
+***
 
-A user that has not logged in will see all published blog posts on the home page, but must register and log in to make posts. Upon logging in, a user can make posts and view all of their own posts whether they have been "published" or not. Unpublished posts are only viewable by the author, and the author can edit or delete their own posts.
+When a user opens the home page they can view all published blog posts. The newest posts are at the top, and the user can scroll down to see older posts. If the user clicks on the title of a post, the post will open in full on a seperate page. If the user is logged in and is the author of the post, the user will be able to edit or delete the post. The user can see all posts by a particular author by clicking on the author's name. A user can also make a new post and if they set it as published, it will show up on the home page.

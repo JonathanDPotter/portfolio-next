@@ -46,9 +46,9 @@ const Projects = () => {
       setter: setBlogMarkdownText,
       text: blogMarkdownText,
       image:
-        "https://user-images.githubusercontent.com/30156468/167709749-baf6b890-6e25-4150-b88f-840ddd2f01e5.png",
-      link: "https://jonathandpotter.github.io/blog-api-front/",
-      github: "https://github.com/JonathanDPotter/blog-api-front",
+        "https://user-images.githubusercontent.com/30156468/212110328-e3049fba-7d14-44b1-b8dd-84ec62cbab2b.png",
+      link: "https://blog-front-2.vercel.app/",
+      github: "https://github.com/JonathanDPotter/blog-front-2",
     },
     {
       markdown: upcMarkdown,
