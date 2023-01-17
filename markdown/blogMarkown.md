@@ -1,6 +1,6 @@
 # Blog-Front
 
-This website is a single page application built with React.js and TypeScript. It is my second version of the Odin Project blog project. The first was fully functional, but I wanted to update the code with new things that I have learned since originally building it. I also used this as an opportunity to further my practice with Bootstrap.
+This website is a single page application built with React.js and TypeScript. It is my second version of the Odin Project blog project. The first was fully functional, but I wanted to update the code with new things that I have learned since originally building it. I also used this as an opportunity to further my practice with Bootstrap. The back end repo can be found [here](https://github.com/JonathanDPotter/blog-api-2), and the repo for this application can be found [here](https://github.com/JonathanDPotter/blog-front-2).
 
 ## Technologies used
 
