@@ -44,7 +44,7 @@ const Project: FC<Iprops> = ({ markdownText, image, link, github }) => {
     <>
       <div className={projectStyles.curtain} data-theme={theme}></div>
       <ReactMarkdown components={{ h1: "h2", h2: "h3" }}>
-        {markdownText.substring(0, markdownText.indexOf("***"))}
+        {markdownText.substring(0, markdownText.indexOf("---"))}
       </ReactMarkdown>
       <p className={projectsStyles.link} onClick={() => setModalOpen(true)}>
         more...

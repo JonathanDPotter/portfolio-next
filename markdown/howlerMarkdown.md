@@ -2,13 +2,13 @@
 
 Howler is a twitter-esque social media app. I made this project for The Odin Project's [Javascript Final Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/javascript-final-project). This app is deployed on Firebase [here](https://howler-1dd33.web.app/).
 
-***
+---
 
 ## Technologies used
 
 This Project is written with React and Redux. It uses a firebase back-end for authentication and a real-time database and uses react-redux-firebase and redux-firestore to make reading the database easy on the front end.
 
-***
+---
 
 ## Functionality
 
