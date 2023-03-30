@@ -64,9 +64,9 @@ const Projects = () => {
       setter: setWeatherMarkdownText,
       text: weatherMarkdownText,
       image:
-        "https://user-images.githubusercontent.com/30156468/168269677-996c3723-eafd-4a0b-9ad8-5c96898bcfaa.png",
-      link: "https://weather-l95e66yd3-jonathandpotter.vercel.app/",
-      github: "https://github.com/JonathanDPotter/weather-api",
+        "https://user-images.githubusercontent.com/30156468/228906938-370ec7ab-adea-43b7-ad03-4fa86c0ca305.png",
+      link: "https://weather-imp-gngd.vercel.app/",
+      github: "https://github.com/JonathanDPotter/weather-imp",
     },
     {
       markdown: typieMarkdown,

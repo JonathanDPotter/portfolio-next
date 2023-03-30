@@ -1,15 +1,11 @@
-# Weather-Imp
+# Weather Imp
 
-I made this app to practice consuming a third-party api. This is the front-end. There is also a back-end express app that handles the api calls. The back-end repo is [here](https://github.com/JonathanDPotter/weather-api-back), and it is hosted on Heroku [here](https://weather-l95e66yd3-jonathandpotter.vercel.app/).
-
----
-
-## Technologies Used
-
-The app is written in TypeScript with React. It uses React Router, Redux, Axios and SASS for styling.
-
----
+I made this app to practice fetching data from external APIs. The back-end that I built with Express.js and TypeScript can be found [here](https://jonathan-potter-weather-api.herokuapp.com/), and the back-end repository is [here](https://github.com/JonathanDPotter/weather-api-back).
 
 ## Functionality
 
-On the home page a user can choose to use their device location or enter a US zip code. The home page displays the current weather conditions for that location. A user can navigate to the three-day forecast or hourly forecast pages to get those forecasts as well.
+The app gets your device's location from navigator.geolocation or gets another location from a provided US zip code and fetches the weather forecast from [Weatherapi](https://www.weatherapi.com/). It then presents the current weather conditions, the hourly forecast and the three-day forecast on seperate pages that the user can navigate to.
+
+## Technologies Used
+
+I built this app using React and Typescript. This app uses Bootstrap, React Bootstrap and SASS for styling, Jest for testing, React Router for routing, Axios for API calls, and React Context for global state management.
