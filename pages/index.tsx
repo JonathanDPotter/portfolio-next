@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import { useRouter } from "next/router";
 import { useTheme } from "../context/themeContext";
 import homeStyles from "../styles/pages/home.module.scss";
-import Image from "next/image";
+import wake from "../utils/wake";
 
 const Home = () => {
   const router = useRouter();
@@ -19,6 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     setFade(false);
+    wake();
   }, []);
 
   return (
