@@ -20,7 +20,7 @@ const wake = () => {
   }
 
   try {
-    fetch("https://typie-talkie-back.herokuapp.com/");
+    fetch("https://jp-todos-api-22f1a0f56308.herokuapp.com/healthcheck");
   } catch (error: any) {
     console.log(error);
   }

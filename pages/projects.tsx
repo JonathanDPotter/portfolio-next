@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { v4 as uuid } from "uuid";
 // components
@@ -10,7 +10,7 @@ import howlerMarkdown from "../markdown/howlerMarkdown.md";
 import blogMarkdown from "../markdown/blogMarkown.md";
 import upcMarkdown from "../markdown/upcMarkdown.md";
 import weatherMarkdown from "../markdown/weatherMarkdown.md";
-import typieMarkdown from "../markdown/typieMarkdown.md";
+import todosMarkdown from "../markdown/todosMarkdown.md";
 import weatherVueMarkdown from "../markdown/weatherVueMarkdown.md";
 // context
 import { useTheme } from "../context/themeContext";
@@ -27,7 +27,7 @@ const Projects = () => {
   const [blogMarkdownText, setBlogMarkdownText] = useState("");
   const [upcMarkdownText, setUpcMarkdownText] = useState("");
   const [weatherMarkdownText, setWeatherMarkdownText] = useState("");
-  const [typieMarkdownText, setTypieMarkdownText] = useState("");
+  const [todosMarkdownText, setTodosMarkdownText] = useState("");
   const [weatherVueMarkdownText, setWeatherVueMarkdownText] = useState("");
   const [fade, setFade] = useState(true);
 
@@ -69,13 +69,13 @@ const Projects = () => {
       github: "https://github.com/JonathanDPotter/weather-imp",
     },
     {
-      markdown: typieMarkdown,
-      setter: setTypieMarkdownText,
-      text: typieMarkdownText,
+      markdown: todosMarkdown,
+      setter: setTodosMarkdownText,
+      text: todosMarkdownText,
       image:
-        "https://user-images.githubusercontent.com/30156468/167945133-7badd9ca-7131-4d21-9472-ea4176410c43.png",
-      link: "https://typie-talkie-front.vercel.app/",
-      github: "https://github.com/JonathanDPotter/typie-talkie-front",
+        "https://private-user-images.githubusercontent.com/30156468/292295185-02062d3b-f26e-43f2-88a1-02d7d02a7346.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDMxODU5ODEsIm5iZiI6MTcwMzE4NTY4MSwicGF0aCI6Ii8zMDE1NjQ2OC8yOTIyOTUxODUtMDIwNjJkM2ItZjI2ZS00M2YyLTg4YTEtMDJkN2QwMmE3MzQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjIxVDE5MDgwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE5MTY5ZDljMjMzNWNkYmNkMjE5ZDBiNTk5OGJlNjAwNWM1ZDZhYWJjZjdhOGMzYjM0Y2IyNWFiYTBhYWYxYjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.bDWTTDP5-4BwqwGbqP9A1j_IiQmtLt70gJGxsfY85Os",
+      link: "https://todos-app-omega.vercel.app/",
+      github: "https://github.com/JonathanDPotter/todos-app",
     },
     {
       markdown: weatherVueMarkdown,
