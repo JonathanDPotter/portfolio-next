@@ -50,15 +50,15 @@ const Projects = () => {
       link: "https://blog-front-2.vercel.app/",
       github: "https://github.com/JonathanDPotter/blog-front-2",
     },
-    // {
-    //   markdown: upcMarkdown,
-    //   setter: setUpcMarkdownText,
-    //   text: upcMarkdownText,
-    //   image:
-    //     "https://user-images.githubusercontent.com/30156468/171711143-1abdfe24-3fff-45e7-910d-995d3ed8fd24.png",
-    //   link: "https://upc-tracker-efxn5f8q7-jonathandpotter.vercel.app/",
-    //   github: "https://github.com/JonathanDPotter/upcTracker",
-    // },
+    {
+      markdown: upcMarkdown,
+      setter: setUpcMarkdownText,
+      text: upcMarkdownText,
+      image:
+        "https://user-images.githubusercontent.com/30156468/171711143-1abdfe24-3fff-45e7-910d-995d3ed8fd24.png",
+      link: "https://upc-tracker.vercel.app",
+      github: "https://github.com/JonathanDPotter/upcTracker",
+    },
     {
       markdown: weatherMarkdown,
       setter: setWeatherMarkdownText,
@@ -73,7 +73,7 @@ const Projects = () => {
       setter: setTodosMarkdownText,
       text: todosMarkdownText,
       image:
-        "https://private-user-images.githubusercontent.com/30156468/292295185-02062d3b-f26e-43f2-88a1-02d7d02a7346.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU2ODE1NzcsIm5iZiI6MTcwNTY4MTI3NywicGF0aCI6Ii8zMDE1NjQ2OC8yOTIyOTUxODUtMDIwNjJkM2ItZjI2ZS00M2YyLTg4YTEtMDJkN2QwMmE3MzQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE5VDE2MjExN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZhODk4YWNmMTU0NDEwNzBhMjY5NWE3NTZmMTkxYzhmZWIxYmIwZDgyNTFjYTdkYzQ1YWNjNmEwMWI3N2QwZjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.t7tjaat5RHgViyrmPw2iDFqM0StuRQHzfL9xXB1rdKg",
+        "https://res.cloudinary.com/skarsnik/image/upload/v1706354811/todos_b8rn0n.png",
       link: "https://todos-app-omega.vercel.app/",
       github: "https://github.com/JonathanDPotter/todos-app",
     },
