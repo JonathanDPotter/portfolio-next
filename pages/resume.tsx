@@ -20,7 +20,7 @@ const Resume = () => {
       data-theme={theme}
     >
       <iframe
-        src="https://drive.google.com/file/d/1SaCDG9dhr2lDJcTyMz1C5-YcRud_x2rD/preview"
+        src="https://drive.google.com/file/d/1ae7N_IHP9czbPx37CnjBg9ah8PLkL_wn/preview"
         allow="autoplay"
       ></iframe>
       <nav>
@@ -48,5 +48,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
-// https://drive.google.com/file/d/1Cgr42ZO9ryWBo0VB8VGh8a2lQSgTXDh5/view?usp=sharing
